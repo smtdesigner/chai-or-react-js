@@ -1,0 +1,15 @@
+nav,ul{
+    display: flex;
+
+}
+li{
+    list-style: none;
+    padding: 1rem 0.5rem;
+
+}
+ul{
+    gap: 34PX;
+}
+nav{
+    background-color: aquamarine;
+}

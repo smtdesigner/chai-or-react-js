@@ -4,7 +4,7 @@ import {Client, Account, ID } from "appwrite";
 
 export class AuthService {
     client = new Client();
-    Account;
+    account;
      
     constructor(){
         this.client
@@ -43,7 +43,7 @@ export class AuthService {
         try {
            return await this.account.get();
         } catch (error) {
-            console.log("Appwrite servi :: getCurrentUser :: error", error);
+            console.log("Appwrite servie :: getCurrentUser :: error", error);
             
         }
         return null;
@@ -53,7 +53,7 @@ export class AuthService {
         try {
             await this.account.deleteSessions();
         } catch (error) {
-            console.log("Appwrite servi :: getCurrentUser :: error", error);
+            console.log("Appwrite servie :: getCurrentUser :: error", error);
             
         }
     }
@@ -64,4 +64,4 @@ export class AuthService {
 
 const authService = new AuthService()
 
-export default AuthService
+export default authService;
